@@ -1,0 +1,388 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from rspbharat.com/terms.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jun 2022 13:48:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Company Terms</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Learn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/jquery.countdown.css" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+<!----font-Awesome----->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="styles.css" rel="stylesheet"> 
+<!----font-Awesome----->
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	
+$(".country").change(function()
+{
+var dataString = 'id='+ $(this).val();
+$.ajax
+({
+type: "POST",
+url: "ajax_state.php",
+data: dataString,
+cache: false,
+success: function(html)
+{
+$(".state").html(html);
+} 
+});
+
+});
+
+});
+</script>
+</head>
+<body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131600034-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131600034-1');
+</script>
+
+<link rel="shortcut icon" type="image/icon" href="images/favicon.html"/>
+<style>
+    @media only screen and (max-width: 1200px)
+    {
+        #navi{
+            width:100%;
+        }
+    }
+    
+</style>
+
+
+<nav class="navbar navbar-default" role="navigation">
+    
+    <div class="col-md-12" style=" background-color:#05632a !important">
+    
+   <div class="col-md-4">
+       <div style="width:300px; height:auto; float:left; margin-top:10px; ">
+                                  <a href="job_portal.html"><img src="images/wbbce-job.png" style="border:1px solid #FFF;"/></a>
+			    <!-- <a href="https://www.facebook.com/West-Bengal-Board-Of-Computer-Education-1540397756262118/" target="_blank"><img src="images/facebook.jpg" style="margin-left:70px;"></a>
+				 <a href="https://twitter.com/WbbceCenter" target="_blank"><img src="images/twitter.jpg" style="margin-left:10px;"></a>
+				 <a href="https://plus.google.com/107344975817518761425/about/p/pub?pli=1&hl=en" target="_blank"><img src="images/google.jpg" style="margin-left:10px;"></a> -->
+
+			   </div>
+			   
+   </div>
+   
+   <div class="col-md-4">
+       <div style="width:100%; height:auto; float:right; margin-top:10px;color:#FFFFFF;padding-left:10%; font-size:15px;">
+			   <center> Email : info@rspbharat.com &nbsp;| &nbsp; Call Us at : +91-99327-41015 </center>
+			   </div>
+   </div>
+   <div class="col-md-4">
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
+	        <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		            <a href="student_login.html"><i class="fa fa-user"></i><span>Student Login</span></a>
+		        </li>
+		        
+		        
+		        <li class="dropdown">
+		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list"></i><span>Login</span></a>
+		        	  <ul class="dropdown-menu">
+			            <li><a href="center/index.html"><span>Center Login</span></a></li>
+			            <li><a href="District_coordinator/index.html"><span>DC Login</span></a></li>
+			            <li><a href="#"><span>SC Login</span></a></li>
+			            <!-- <li><a href="upload/franchise.pdf" target="_blank">Offline Apply</a></li> -->
+			           </ul>
+		        </li>
+		        
+		        
+		        <li class="dropdown">
+		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list"></i><span>Franchise</span></a>
+		        	  <ul class="dropdown-menu">
+			            <li><a href="franchisee_registration.html">Online Apply</a></li>
+			             <li><a href="#" target="_blank">Offline Apply</a></li> 
+			           </ul>
+		        </li>
+		       <!-- <li class="dropdown">
+		            <a href="career.php" class="dropdown-toggle" ><i class="fa fa-calendar"></i><span>Career</span></a>
+		             
+		        </li>-->
+		         <li class="dropdown">
+		            <a href="career.html" class="dropdown-toggle" ><i class="fa fa-user"></i><span>Career</span></a>
+		             
+		        </li>
+		        <!--<li class="dropdown">
+		            <a href="#" class="dropdown-toggle" ><i class="fa fa-download"></i><span>Download</span></a>
+		             
+		        </li>-->
+				<!-- <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar"></i><span>Downloads</span></a>
+		             <ul class="dropdown-menu">
+			            <li><a href="upload/registration.pdf">Student Application Form</a></li>
+			            <li><a href="upload/center.pdf">Center Application Form</a></li>
+			           </ul>
+		        </li> -->
+                         <!-- <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar"></i><span>Courses</span></a>
+		             <ul class="dropdown-menu">
+			            <li><a href="upload/3month.pdf">3 Month Syallabus</a></li>
+			            <li><a href="upload/6month.pdf">6 Month Syallabus</a></li>
+                                    <li><a href="upload/1year.pdf">1 year Syallabus</a></li>
+                                    <li><a href="upload/2year.pdf">2 Year Syallabus</a></li>
+                                    <li><a href="upload/vocational.php">Vocational Course Syallabus</a></li>
+			           </ul>
+		        </li> -->
+		       
+		    </ul>
+			    
+			    </div>  
+       
+   </div>
+</div>
+    
+    
+    
+    
+	<div class="container">
+	    <center><div class="col-md-12" >
+		   <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+	        </button>
+
+	        <center><a class="navbar-brand" href="index-2.html"><img src="images/banner-site.jpg" style="width:100%;"></a></center>
+			</div>
+		</div></center>
+	 
+	    <!--/.navbar-header-->
+		 
+		       
+			  
+			  
+		
+		</div>
+	    <div class="clearfix"> </div>
+	  </div>
+	    <!--/.navbar-collapse-->
+</nav>
+<nav class="navbar nav_bottom" role="navigation">
+ <div class="container" id="navi">
+ <!-- Brand and toggle get grouped for better mobile display -->
+              <div id='cssmenu'>
+<ul style="z-index:999;">
+   <li class='has-sub'><a href='index-2.html'>Home</a></li>
+   <li class='has-sub'><a href='#'>About</a>
+      <ul>
+         <li class='has-sub'><a href='about.html'>About RSPBHARAT</a></li>
+         <li class='has-sub'><a href='director.html'>Director Message</a></li>
+		 <li class='has-sub'><a href='recognition.html'>Recognition</a></li>
+		 <li class='has-sub'><a href='bank_details.html'>Bank Details</a></li>
+		 <li class='has-sub'><a href='affiliation.html'>Affiliation</a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'>Online</a>
+      <ul>
+         <li class='has-sub'><a href='registration.html'>Registration</a></li>
+		 
+		 <li class='has-sub'><a href='student_application.html'>Application Details</a></li>
+       
+		 
+      </ul>
+   </li>
+    <li class='has-sub'><a href='#'>Courses</a>
+      <ul>
+	           <li class='has-sub'><a href='courses2923.html?cat_id=18'>3 Months Course</a></li>
+	          <li class='has-sub'><a href='courses4c6e.html?cat_id=19'>6 Months Course</a></li>
+	          <li class='has-sub'><a href='coursesf9ef.html?cat_id=20'>1 Year Course</a></li>
+	          <li class='has-sub'><a href='courses3e00.html?cat_id=21'>2 Years Course</a></li>
+	          <li class='has-sub'><a href='courses6764.html?cat_id=22'>Vocational 3 Months Course</a></li>
+	          <li class='has-sub'><a href='courses7de7.html?cat_id=23'>Vocational 6 Months Course</a></li>
+	          <li class='has-sub'><a href='courses4db8.html?cat_id=24'>Vocational 1 Year Course</a></li>
+	          <li class='has-sub'><a href='coursesbc00.html?cat_id=25'>Special Course</a></li>
+	          <li class='has-sub'><a href='courses920e.html?cat_id=26'>18 Months Courses</a></li>
+	          <li class='has-sub'><a href='courses572d.html?cat_id=27'>Vocational 2 Years Courses Special</a></li>
+	          <li class='has-sub'><a href='coursesfd1d.html?cat_id=28'>Vocational 2 Years Courses</a></li>
+	       </ul>
+   </li>
+  
+ 
+    <li class='has-sub'><a href='#'>Study Center</a>
+      <ul>
+         <li class='has-sub'><a href='nearest_center.html'>Search Nearest Center</a></li>
+         <li class='has-sub'><a href='center_by_code.html'>Search Center By Code</a></li>
+	
+      </ul>
+   </li>
+   
+   <li><a href='notice.html'>Notice Board</a></li>
+   <li><a href='gallery.html'>Gallery</a></li>
+    
+   <li><a href='events.html'>News & Events</a></li>
+    <li class='has-sub'><a href='#'>Verification</a>
+      <ul>
+         <li class='has-sub'><a href='student_verification.html'>Registration Verification</a></li>
+          <li class='has-sub'><a href='certificate_verification.html'>Certificate Verification</a></li>
+		 
+      </ul>
+   </li>
+   <li><a href='contact.html'>Contact Us</a></li>
+</ul>
+</div>
+   </div>
+</nav>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>    <!-- //banner -->
+	<div class="admission" style="background-color:#FFFFCC;">
+	   <div class="container" style="border:2px solid #333; padding:2%;">
+	   	  <center><h1 style="background-color:#0DA850; color:#FFFFFF; padding:0.5%;">Company Terms</h1></center>
+	   	 
+	   	 <p style="color:#000000; font-weight:bold;">Employers / Placement Agencies are advised to read the Terms of Use carefully. Agreement to the Terms of Use is necessary for further access to the web portal.
+</p>
+
+       <p style="color:#333333;"> <img src="images/bullet.png" style="width:17px;"> Rastriya Shikhsha Parisad reserves the right, to modify the terms, either partially or fully at any time.</p>
+	   
+	   <p style="color:#333333;"> <img src="images/bullet.png" style="width:17px;"> The Employers / Placement Agencies will be solely responsible for the correctness, authenticity or updating of any information about the Organization / agency or jobs offered for their respective role. The Employers / Placement Agencies should not post or submit any incomplete, false or inaccurate information.</p>
+	   
+	   <p style="color:#333333;"> <img src="images/bullet.png" style="width:17px;"> The Employer / Placement Agencies shall not use any Resume / Database or any part of it owned by Rastriya shikhsha Parisad for any purpose other than fulfillment of manpower requirement in an organization, like sale or promotion of any products or services.</p>
+	   
+	   <p style="color:#333333;"> <img src="images/bullet.png" style="width:17px;"> The Employer/ Placement Agencies shall not post any job that pays commission only like pyramid scheme, franchisee, distributorship etc.</p>
+	   
+	   <p style="color:#333333;">Any use of web site in contravention of provisions of law is prohibited.
+</p>
+
+     <p style="color:#333333;"> <img src="images/bullet.png" style="width:17px;"> Rastriya shikhsha Parisad shall have the sole discretion on whether or not to publish any advertisement posted by any Employer/ Placement Agency. It shall also have the discretion to discontinue permission for enrollment without assigning any reason.</p>
+	 
+	 <p style="color:#333333;"> <img src="images/bullet.png" style="width:17px;"> At the time of enrolment of the job-seekers, Rastriya shikhsha Parisad does not guarantee the authenticity of certificates relating to the Caste, Address, Qualification etc. Rastriya shikhsha Parisad, however, does not verify the information on Experience, Physical Measurement or contact details. It is the responsibility of Employers / Placement Agencies to check the authenticity of the information provided by the job-seekers. The selection and placement of the job-seekers against the jobs posted in the website immediately . The Placement Agencies shall also have the obligation to disclose the information related to the placement of the job-seekers against the jobs posted in the website mentioning the details of the Employers to whom the services are provided by the Agency.</p>
+	 
+	 <p style="color:#333333;"> <img src="images/bullet.png" style="width:17px;"> The Employer/ Placement Agencies shall always act strictly as per law of the land in respect of any service taken from Rastriya shikhsha Parisad or for any employment provided to the job-seekers through RSP job portal. Posting of irrelevant, defamatory, obscene, communal, racist, offensive, abusive, hateful, discriminatory contents or resume whether implicitly or explicitly is strictly prohibited. RSP job portal must not be used for causing social tension, anxiety, harassment, inconvenience or embarrassment, to any person or group of persons. No one shall use the services for any illegal or immoral purpose with malaise intentions and ulterior motives.</p>
+	 
+	 <p style="color:#333333;"> <img src="images/bullet.png" style="width:17px;"> The Employers / Placement Agencies are responsible for maintaining the confidentiality of their password and account and will immediately notify through "CONTACT US" of any unauthorized use of their account and password.</p>
+	 <form action="#" method="post">
+	 <div class="input-group input-group1">
+	<div class="col-md-12">
+	<label><input type="checkbox" required> I have read, understood and agreed to the Terms and Conditions of RSP Job Portal</label>
+	</div>			   
+	 </div>
+	 
+	 <center><button type="submit" name="submit" class="btn btn-primary btn-lg1">CONTINUE TO REGISTER</button></center>
+	 
+	 </form>
+		
+		   <div class="clearfix"> </div>
+	   </div>
+	</div>
+   <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=177730772597903";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <div class="footer">
+    	<div class="container">
+    		<div class="col-md-3 grid_4">
+    		   <h3>Follow Us On facebook</h3>	
+    		 <div class="fb-page" height="150" data-href="https://www.facebook.com/rspbharat/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/rspbharat/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/rspbharat/">RSP Bharat</a></blockquote></div>
+    		      <ul class="social-nav icons_2 clearfix">
+                    <li><a href="https://twitter.com/BharatRsp?lang=en" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/rspbharat/" class="facebook" target="_blank"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://plus.google.com/u/0/109916409373961743042" class="google-plus" target="_blank"><i class="fa fa-google-plus"></i></a></li> 
+                    <li><a href="https://www.linkedin.com/in/rsp-bharat-3662a6178/" class="facebook" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                 </ul>
+    		</div>
+    		<div class="col-md-3 grid_4">
+    		   <h3>Quick Links</h3>
+    			<ul class="footer_list">
+    				<li><a href="registration.html">-   STUDENT REGISTRATION</a></li>
+    				<li><a href="notice.html">-  NOTICE BOARD</a></li>
+    				<li><a href="gallery.html">-  IMAGE GALLERY</a></li>
+    				<li><a href="career.html">-  CAREER</a></li>
+    				<li><a href="privacy.html">-  Privacy Policy</a></li>
+    				<li><a href="terms.html">-  Terms and Conditions</a></li>
+    				<li><a href="refund.html">-  Refund and Cancellation Policy</a></li>
+    				<li><a href="contact.html">-  CONTACT US</a></li>
+    			</ul>
+    		</div>
+    		<div class="col-md-3 grid_4">
+    		   <h3>Contact Us</h3>
+    			<address>
+                    <strong>Medical More, P.O- Sushruta Nagar</strong>
+                    <br>
+                    <span>Dist-Darjeeling, Pin-734012</span>
+                    <br><br>
+                    <abbr>Email : </abbr> <a href="mailto:info@rspbharat.com">info@rspbharat.com</a><br/>
+                     <abbr>Mobile : </abbr> +91-99327-41015
+                    <br>
+                    <div style="font-weight:bold;" class="schedule-block">
+                    <b>Office Hour:</b><br/>
+                    Monday - Friday 10:00AM to 5:00PM <br/>
+                    Saturday 10:00AM to 3:00PM<br/>
+                    Sunday Closed
+                    </div>
+                    <br>
+                    
+               </address>
+    		</div>
+    		<div class="col-md-3 grid_4">
+    		   <!-- <h3>Download Our App</h3> -->
+                   <!-- <a href="https://play.google.com/store/apps/details?id=com.wbbce.remo" target="_blank"><img src="images/google-play.png" style="width:100%; height:auto;"/></a> -->
+    			 
+            </div>
+    		<div class="clearfix"> </div>
+    		<div class="copy">
+		       <p>Copyright &copy; 2019 RSP BHARAT. All Rights Reserved  | Powered by <a href="http://dishawebexperts.com/" target="_blank">Disha Web Experts</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://w3layouts.com/" target="_blank" style="color:#005299;">W3layouts</a> </p>
+	        </div>
+    	</div>
+    </div>
+<!-- Statcounter code for Rspbharat.com http://rspbharat.com
+on Dreamweaver -->
+<script type="text/javascript">
+var sc_project=12401294; 
+var sc_invisible=1; 
+var sc_security="b32a4da7"; 
+</script>
+<script type="text/javascript"
+src="../www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12401294/0/b32a4da7/1/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code --></body>
+
+<!-- Mirrored from rspbharat.com/terms.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jun 2022 13:48:35 GMT -->
+</html>	

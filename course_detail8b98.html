@@ -1,0 +1,579 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from rspbharat.com/course_detail.php?cid=40 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jun 2022 13:48:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Course Details</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Learn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/jquery.countdown.css" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+<!----font-Awesome----->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link rel="stylesheet" href="styles.css">
+<script src="../use.fontawesome.com/28f884954e.js"></script>
+<!----font-Awesome----->
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+	
+$(".country").change(function()
+{
+var dataString = 'id='+ $(this).val();
+$.ajax
+({
+type: "POST",
+url: "ajax_country.php",
+data: dataString,
+cache: false,
+success: function(html)
+{
+$(".district").html(html);
+} 
+});
+
+});
+
+$('.district').change(function(){									   
+var dataString = 'id='+ $(this).val();
+$.ajax
+({
+type: "POST",
+url: "ajax_state.php",
+data: dataString,
+cache: false,
+success: function(html)
+{
+$(".state").html(html);
+} 
+});
+
+});
+
+$('.state').change(function(){									   
+var dataString = 'id='+ $(this).val();
+$.ajax
+({
+type: "POST",
+url: "ajax_city.php",
+data: dataString,
+cache: false,
+success: function(html)
+{
+$(".city").html(html);
+} 
+});
+
+});
+
+
+
+});
+</script>
+<style>
+    
+    .whatsapp{
+    position:fixed;
+    right:0px;
+    top:85%;
+    z-index:999;
+}
+
+.whatsapp h5{
+    color:white;
+    background:#20b20f;
+    padding:12px;
+    border-radius:10px;
+}
+    
+</style>
+</head>
+<body>
+
+	<body>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131600034-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-131600034-1');
+		</script>
+		
+		<link rel="shortcut icon" type="image/icon" href="images/favicon.html"/>
+		<style>
+			@media only screen and (max-width: 1200px)
+			{
+				#navi{
+					width:100%;
+				}
+			}
+			
+		</style>
+		
+		
+		<nav class="navbar navbar-default" role="navigation">
+			
+			<div class="col-md-12" style=" background-color:#05632a !important">
+			
+		   <div class="col-md-4">
+			   <div style="width:300px; height:auto; float:left; margin-top:10px; ">
+										  <!-- <a href="job_portal.html"><img src="images/wbbce-job.png" style="border:1px solid #FFF;"/></a> -->
+						<!-- <a href="https://www.facebook.com/West-Bengal-Board-Of-Computer-Education-1540397756262118/" target="_blank"><img src="images/facebook.jpg" style="margin-left:70px;"></a>
+						 <a href="https://twitter.com/WbbceCenter" target="_blank"><img src="images/twitter.jpg" style="margin-left:10px;"></a>
+						 <a href="https://plus.google.com/107344975817518761425/about/p/pub?pli=1&hl=en" target="_blank"><img src="images/google.jpg" style="margin-left:10px;"></a> -->
+		
+					   </div>
+					   
+		   </div>
+		   
+		   <div class="col-md-10">
+			<div style="width:100%; height:auto; margin-top:10px;color:#FFFFFF; font-size:15px;">
+					   <left> Email : info@gurukuledu.in &nbsp;| &nbsp; Call Us at : +91-9662895519, 9777898105 </left>
+					   </div>
+		   </div>
+		   <div class="blink"><span>𝓐𝓭𝓶𝓲𝓼𝓼𝓲𝓸𝓷 𝓸𝓹𝓮𝓷.!</span></div>
+		   <div class="col-md-4">
+				<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
+				   
+							 
+						
+						
+											
+							  
+					   
+					</ul> 
+						
+						</div>  
+			   
+		   </div>
+		</div>
+			
+			
+			
+			
+		<div class="container">
+			<center><div class="col-md-12" >
+			   <div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+		
+				<center><a class="navbar-brand" href="index.html"><img src="images/banner-site-51.png" style="width:100%;" ></a></center>
+				</div>
+			</div></center>
+		 
+			<!--/.navbar-header-->
+			 
+				   
+				  
+				  
+			
+			</div>
+			<div class="clearfix"> </div>
+		  </div>
+			<!--/.navbar-collapse-->
+		</nav>
+		<nav class="navbar nav_bottom" role="navigation">
+		<div class="container" id="navi">
+		<!-- Brand and toggle get grouped for better mobile display -->
+				  <div id='cssmenu'>
+		<ul style="z-index:999;">
+		<li class='has-sub'><a href='index.html'>Home</a></li>
+		<li class='has-sub'><a href='#'>About</a>
+		  <ul>
+			 <li class='has-sub'><a href='about.html'>About Gurukul</a></li>
+			 <!-- <li class='has-sub'><a href='director.html'>Director Message</a></li>
+			 <li class='has-sub'><a href='recognition.html'>Recognition</a></li>
+			 <li class='has-sub'><a href='bank_details.html'>Bank Details</a></li>
+			 <li class='has-sub'><a href='affiliation.html'>Affiliation</a></li> -->
+		  </ul>
+		</li>
+		<li class='has-sub'><a href='#'>Online</a>
+		  <ul>
+			 <li class='has-sub'><a href='registration.html'>Registration</a></li>
+			 <li class='has-sub'><a href='certificate apply form.html'>Certificate Apply</a></li>
+			 
+			 <!-- <li class='has-sub'><a href='student_application.html'>Application Details</a></li> -->
+		   
+			 
+		  </ul>
+		</li>
+		<li class='has-sub'><a href='#'>Courses</a>
+		  <ul>
+				  <li class='has-sub'><a href='course_detail8b97.html'>PGDCA</a></li>
+				  <li class='has-sub'><a href='course_detail8b93.html'>DCA</a></li>
+				  <li class='has-sub'><a href='course_detail8b94.html'>TALLY</a></li>
+				  <li class='has-sub'><a href='course_detail8b95.html'>DTP</a></li>
+				  <li class='has-sub'><a href='course_detail8b98.html'>SCO</a></li>
+				  <li class='has-sub'><a href='course_detail8b99.html '>MASTER CLASS</a></li>
+		  </ul>
+		</li>
+		
+		
+		
+		
+		<li><a href='notice.html'>Notice Board</a></li>
+		<li><a href='gallery.html'>Gallery</a></li>
+		
+		<li><a href='events.html'>Events</a></li>
+		<li class='has-sub'><a href='#'>Verification</a>
+		  <ul>
+			 <li class='has-sub'><a href='student_verification.html'>Registration Verification</a></li>
+			  <!-- <li class='has-sub'><a href='certificate_verification.html'>Certificate Verification</a></li> -->
+			 
+		  </ul>
+		</li>
+		<li><a href='contact.html'>Contact Us</a></li>
+		</ul>
+		</div>
+		</div>
+		</nav>
+		<link rel="stylesheet" href="styles.css">
+		<script src="script.js"></script><!-- banner -->
+		<div class="banner">
+				<!-- banner Slider starts Here -->
+						<script src="js/responsiveslides.min.js"></script>
+						 <script>
+							// You can also use "$(window).load(function() {"
+							$(function () {
+							  // Slideshow 4
+							  $("#slider3").responsiveSlides({
+								auto: true,
+								pager: true,
+								nav: true,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+								  $('.events').append("<li>before event fired.</li>");
+								},
+								after: function () {
+								  $('.events').append("<li>after event fired.</li>");
+								}
+							  });
+						
+							});
+						  </script>
+						  <div class="courses_box1">
+							<div class="container">
+								  <div class="col-md-3">
+								 
+							   <div class="social-widget">
+								<ul class="courses_social">
+									<li class="facebook-icon">
+										<div>
+											<a href="#" class="fa fa-facebook" target="_blank"></a>
+											
+										</div>        							
+									</li>
+									<li class="twitter-icon">
+										<div>
+											<a href="#" class="fa fa-twitter" target="_blank"></a>
+											
+										</div>        							
+									</li>
+									<li class="gplus-icon">
+										<div>
+											<a href="#" class="fa fa-google-plus" target="_blank"></a>
+											
+										</div>        							
+									</li>
+									<div class="clearfix"> </div>
+								 </ul>
+							   </div>
+						  
+							</div>
+							<div class="col-md-9 detail">
+										<img src="images/index.html" class="img-responsive" alt=""/>
+					 
+		<div class="col-md-9 detail">
+					<img src="images/index.html" class="img-responsive" alt=""/>
+			<h3>SCO [Search Engine Optimization]</h3>
+			<div>
+				<link rel="stylesheet" href="PGDCA.css">
+				<table>
+					<tr>
+						<th>Module</th>
+						<th>Discriptions</th>
+					</tr>
+					<tr>
+						<td>Module 1</td>
+						<td>*****</td>
+					</tr>
+					<tr>
+						<td>Module 2</td>
+						<td>******</td>
+					</tr>
+					<tr>
+						<td>Module 3</td>
+						<td>******</td>
+					</tr>
+					<tr>
+						<td>Module 4</td>
+						<td>*****</td>
+					</tr>
+					<tr>
+						<td>Module 5</td>
+						<td>******</td>
+					</tr>
+					<tr>
+						<td>Module 6</td>
+						<td>*****</td>
+					</tr>
+					<tr>
+						<td>Module 7</td>
+						<td>*****</td>
+					</tr>
+					<tr>
+						<td>Module 8</td>
+						<td>****</td>
+					</tr>
+					<tr>
+						<td>Module 9</td>
+						<td>*****</td>
+					</tr>
+					<tr>
+						<td>Module 10</td>
+						<td>****</td>
+					</tr>
+					<tr>
+						<td>Module 11</td>
+						<td>******</td>
+					</tr>
+	
+				</table>
+			</div>
+			<p> &nbsp;</p>
+
+
+			
+             <!-- <p>&nbsp;</p>
+			<input type="button" value="Enquire About The Course" style="width:auto; height:40px; background-color:#000066; color:#FFFFFF;border:none;"data-toggle="modal" data-target="#myModal"> -->
+			
+		  </div>
+		  <div class="clearfix"> </div>
+	   </div>
+	</div>
+   <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=177730772597903";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="footer">
+    <div class="container">
+        <div class="col-md-3 grid_4">
+           <h3>Follow Us On facebook</h3>	
+         <div class="fb-page" height="150" data-href="#" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="#" class="fb-xfbml-parse-ignore"><a href="#">GRTC Institute</a></blockquote></div>
+              <ul class="social-nav icons_2 clearfix">
+                <li><a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="facebook" target="_blank"> <i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="google-plus" target="_blank"><i class="fa fa-google-plus"></i></a></li> 
+                <li><a href="#" class="facebook" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+             </ul>
+        </div>
+        <div class="col-md-3 grid_4">
+           <h3>Quick Links</h3>
+            <ul class="footer_list">
+                <li><a href="registration.html">-   STUDENT REGISTRATION</a></li>
+                <li><a href="notice.html">-  NOTICE BOARD</a></li>
+                <li><a href="gallery.html">-  IMAGE GALLERY</a></li>
+                <!-- <li><a href="career.html">-  CAREER</a></li> -->
+                <!-- <li><a href="privacy.html">-  Privacy Policy</a></li>
+                <li><a href="terms.html">-  Terms and Conditions</a></li>
+                <li><a href="refund.html">-  Refund and Cancellation Policy</a></li> -->
+                <li><a href="contact.html">-  CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 grid_4">
+           <h3>Contact Us</h3>
+            <address>
+                <strong>Benagaon, Kanas, Puri</strong>
+                <br>
+                <div class="puri">Dist-Puri, Pin-752017</div>
+                <br><br>
+                <abbr>Email : </abbr> <a href="mailto:info@gurukuledu.in">info@gurukuledu.in</a><br/>
+                 <abbr>Mobile : </abbr> +91-9662895519
+                <br>
+                <div style="font-weight:bold;" class="schedule-block">
+                <b>Office Hour:</b><br/>
+                Monday - Saturday 07:00AM to 07:00PM <br/>
+                Sunday Closed
+                </div>
+                <br>
+                
+           </address>
+        </div>
+        <div class="col-md-3 grid_4">
+           <!-- <h3>Download Our App</h3> -->
+               <!-- <a href="https://play.google.com/store/apps/details?id=com.wbbce.remo" target="_blank"><img src="images/google-play.png" style="width:100%; height:auto;"/></a> -->
+             
+        </div>
+        <div class="clearfix"> </div>
+        <div class="copy">
+           <p>Copyright &copy; 2021 GRTC. All Rights Reserved  | Powered by <a href="#" target="_blank"> GRTC Institute</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="#" target="_blank" style="color:#005299;">#</a> </p>
+        </div>
+    </div>
+</div>
+<!-- Statcounter code for Rspbharat.com http://rspbharat.com
+on Dreamweaver -->
+<script type="text/javascript">
+var sc_project=12401294; 
+var sc_invisible=1; 
+var sc_security="b32a4da7"; 
+</script>
+<script type="text/javascript"
+src="../www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12401294/0/b32a4da7/1/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code   <div style="margin-right:20px;" class="whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=919932741015" target="_blank">
+    <h5><i class="fa fa-whatsapp fa-3x fa-spin" aria-hidden="true"></i></h5></a>
+    </div> -->
+<!-- FlexSlider -->
+<link href="css/flexslider.css" rel='stylesheet' type='text/css' />
+<script defer src="js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+$(function(){
+  SyntaxHighlighter.all();
+});
+$(window).load(function(){
+  $('.flexslider').flexslider({
+    animation: "slide",
+    start: function(slider){
+      $('body').removeClass('loading');
+    }
+  });
+});
+</script>
+
+ <div class="modal fade" id="myModal" role="dialog">
+<div class="modal-dialog">
+
+  <!-- Modal content-->
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      
+    </div>
+    <div class="modal-body">
+    
+    <h3 style="font-family:'rock'; color:#CC0000; text-align:center; font-size:36px">Yes I Want To Know More</h3>
+    
+             <form action="#" method="post" >
+                <div class="row" style="margin-top:15px;">
+                <div class="col-md-6">
+                <label>Full Name <span style="color:#FF0000;">*</span></label><br />
+                <input type="text"  name="name"  style="width:100%;height:38px;" required="required"/>
+                <input type="hidden" class="textbox" name="cid"  value="40" style="width:100%;height:38px;" />
+                </div>
+                
+                
+                
+                <div class="col-md-6">
+                <label>Phone # (For Confirmation) <span style="color:#FF0000;">*</span></label><br />
+                <input type="text" class="textbox" name="phone"  style="width:100%;height:38px;" required="required"/>
+                </div>
+                </div>
+                
+                <div class="row" style="margin-top:15px;">
+                <div class="col-md-6">
+                <label>Email Address</label><br />
+                <input type="text" class="textbox" name="email"  style="width:100%;height:38px;" />
+                </div>
+                <div class="col-md-6">
+                <label>State</label><br />
+               <select  name="state" class="country" style="width:100%;height:38px;">
+                   <option>--Select Your State--</option>
+                  <option value="1">Andhra Pradesh</option><option value="2">Arunachal Pradesh</option><option value="3">Assam</option><option value="4">Bihar</option><option value="5">Chhattisgarh</option><option value="6">Goa</option><option value="7">Gujarat</option><option value="8">Haryana</option><option value="9">Himachal Pradesh</option><option value="10">Jammu & Kashmir</option><option value="11">Jharkhand</option><option value="12">Karnataka</option><option value="13">Kerala</option><option value="14">Madhya Pradesh</option><option value="15">Maharashtra</option><option value="16">Manipur</option><option value="17">Meghalaya</option><option value="18">Nagaland</option><option value="19">Odisha (Orissa)</option><option value="20">Punjab</option><option value="21">Rajasthan</option><option value="22">Sikkim</option><option value="23">Tamil Nadu</option><option value="24">Telangana</option><option value="25">Tripura</option><option value="26">Uttar Pradesh</option><option value="27">Uttarakhand</option><option value="28">West Bengal</option><option value="29">Delhi</option><option value="30">Chandigarh</option><option value="31">Mizoram</option><option value="32">Andaman and Nicobar Islands</option><option value="33">Dadra and Nagar Haveli</option><option value="34">Daman and Diu</option><option value="35">Lakshadweep</option><option value="36">Pondicherry</option>				   </select>
+                </div>
+                </div>
+                
+                <div class="row" style="margin-top:15px;">
+                <div class="col-md-6">
+                <label>District</label><br />
+               <select  name="dis" class="district" style="width:100%;height:38px;" required="required">
+                    <option selected="selected" value="">--Select District--</option>
+               </select>
+               </div>
+                <div class="col-md-6">
+                <label>City</label><br />
+               <select  name="city" class="state" style="width:100%;height:38px;" required="required">
+                     <option selected="selected" value="">--Select City--</option>
+               </select>
+                </div>
+                </div>
+
+                                   <div class="row" style="margin-top:15px;">
+                <div class="col-md-12">
+                <label>Center</label><br />
+               <select  name="center" class="city" style="width:100%;height:38px;" required="required">
+                    <option selected="selected" value="">--Select Center--</option>
+               </select>
+               </div>
+                
+                </div>
+                
+                
+                <div class="row" style="margin-top:15px;">
+                <div class="col-md-12">
+                
+                <center><input type="submit" class="button1" value="SUBMIT THE DETAILS" name="submit"   /></center>
+                
+                
+                <center>We value your privacy and would never spam you</center><br/>
+                
+                </div>
+                </div>
+                </form>
+    </div>
+   
+  </div>
+  
+</div>
+
+
+</div>
+
+<!-- FlexSlider -->
+</body>
+
+<!-- Mirrored from rspbharat.com/course_detail.php?cid=40 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jun 2022 13:48:45 GMT -->
+</html>	

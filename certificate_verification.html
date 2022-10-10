@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from rspbharat.com/certificate_verification.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jun 2022 13:48:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Certificate Verification</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Learn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/jquery.countdown.css" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+<!----font-Awesome----->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link rel="stylesheet" href="styles.css">
+<script src="../use.fontawesome.com/28f884954e.js"></script>
+<!----font-Awesome----->
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function()
+{	
+$(".state").change(function()
+{
+var dataString = 'id='+ $(this).val();
+$.ajax
+({
+type: "POST",
+url: "ajax_state.php",
+data: dataString,
+cache: false,
+success: function(html)
+{
+$(".city").html(html);
+} 
+});
+
+});
+});
+
+</script>
+<style>
+    
+    .whatsapp{
+    position:fixed;
+    right:0px;
+    top:85%;
+    z-index:999;
+}
+
+.whatsapp h5{
+    color:white;
+    background:#20b20f;
+    padding:12px;
+    border-radius:10px;
+}
+    
+</style>
+</head>
+<body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131600034-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131600034-1');
+</script>
+
+<link rel="shortcut icon" type="image/icon" href="images/favicon.html"/>
+<style>
+    @media only screen and (max-width: 1200px)
+    {
+        #navi{
+            width:100%;
+        }
+    }
+    
+</style>
+
+
+<nav class="navbar navbar-default" role="navigation">
+    
+    <div class="col-md-12" style=" background-color:#05632a !important">
+    
+   <div class="col-md-4">
+       <div style="width:300px; height:auto; float:left; margin-top:10px; ">
+                                  <!-- <a href="job_portal.html"><img src="images/wbbce-job.png" style="border:1px solid #FFF;"/></a> -->
+			    <!-- <a href="https://www.facebook.com/West-Bengal-Board-Of-Computer-Education-1540397756262118/" target="_blank"><img src="images/facebook.jpg" style="margin-left:70px;"></a>
+				 <a href="https://twitter.com/WbbceCenter" target="_blank"><img src="images/twitter.jpg" style="margin-left:10px;"></a>
+				 <a href="https://plus.google.com/107344975817518761425/about/p/pub?pli=1&hl=en" target="_blank"><img src="images/google.jpg" style="margin-left:10px;"></a> -->
+
+			   </div>
+			   
+   </div>
+   
+   <div class="col-md-4">
+    <div style="width:100%; height:auto; margin-top:10px;color:#FFFFFF; font-size:15px;">
+			   <left> Email : gurukul.coaching021@gmail.com &nbsp;| &nbsp; Call Us at : +91-9662895519, 9777898105 </left>
+			   </div>
+   </div>
+   <div class="col-md-4">
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
+	        <!-- <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		            <a href="student_login.html"><i class="fa fa-user"></i><span>Student Login</span></a>
+		        </li>
+		        
+		        
+		        <li class="dropdown">
+		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list"></i><span>Login</span></a>
+		        	  <ul class="dropdown-menu">
+			            <li><a href="center/index.html"><span>Center Login</span></a></li>
+			            <li><a href="District_coordinator/index.html"><span>DC Login</span></a></li>
+			            <li><a href="#"><span>SC Login</span></a></li>
+			            <!-- <li><a href="upload/franchise.pdf" target="_blank">Offline Apply</a></li> -->
+			           </ul>
+		        </li>
+		        
+		        
+		        <!-- <li class="dropdown">
+		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list"></i><span>Franchise</span></a>
+		        	  <ul class="dropdown-menu">
+			            <li><a href="franchisee_registration.html">Online Apply</a></li>
+			             <li><a href="#" target="_blank">Offline Apply</a></li> 
+			           </ul>
+		        </li> -->
+		       <!-- <li class="dropdown">
+		            <a href="career.php" class="dropdown-toggle" ><i class="fa fa-calendar"></i><span>Career</span></a>
+		             
+		        </li>-->
+		         <!-- <li class="dropdown">
+		            <a href="career.html" class="dropdown-toggle" ><i class="fa fa-user"></i><span>Career</span></a>
+		             
+		        </li> -->
+		        <!--<li class="dropdown">
+		            <a href="#" class="dropdown-toggle" ><i class="fa fa-download"></i><span>Download</span></a>
+		             
+		        </li>-->
+				<!-- <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar"></i><span>Downloads</span></a>
+		             <ul class="dropdown-menu">
+			            <li><a href="upload/registration.pdf">Student Application Form</a></li>
+			            <li><a href="upload/center.pdf">Center Application Form</a></li>
+			           </ul>
+		        </li> -->
+                         <!-- <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar"></i><span>Courses</span></a>
+		             <ul class="dropdown-menu">
+			            <li><a href="upload/3month.pdf">3 Month Syallabus</a></li>
+			            <li><a href="upload/6month.pdf">6 Month Syallabus</a></li>
+                                    <li><a href="upload/1year.pdf">1 year Syallabus</a></li>
+                                    <li><a href="upload/2year.pdf">2 Year Syallabus</a></li>
+                                    <li><a href="upload/vocational.php">Vocational Course Syallabus</a></li>
+			           </ul>
+		        </li> -->
+		       
+		    </ul>
+			     
+			    </div>  
+       
+   </div>
+</div>
+    
+    
+    
+    
+<div class="container">
+    <center><div class="col-md-12" >
+       <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <center><a class="navbar-brand" href="index.html"><img src="images/banner-site2.png" style="width:100%;" ></a></center>
+        </div>
+    </div></center>
+ 
+    <!--/.navbar-header-->
+     
+           
+          
+          
+    
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+    <!--/.navbar-collapse-->
+</nav>
+<nav class="navbar nav_bottom" role="navigation">
+	<nav class="navbar nav_bottom" role="navigation">
+		<div class="container" id="navi">
+		<!-- Brand and toggle get grouped for better mobile display -->
+				  <div id='cssmenu'>
+		<ul style="z-index:999;">
+		<li class='has-sub'><a href='index.html'>Home</a></li>
+		<li class='has-sub'><a href='#'>About</a>
+		  <ul>
+			 <li class='has-sub'><a href='about.html'>About Gurukul</a></li>
+			 <!-- <li class='has-sub'><a href='director.html'>Director Message</a></li>
+			 <li class='has-sub'><a href='recognition.html'>Recognition</a></li>
+			 <li class='has-sub'><a href='bank_details.html'>Bank Details</a></li>
+			 <li class='has-sub'><a href='affiliation.html'>Affiliation</a></li> -->
+		  </ul>
+		</li>
+		<li class='has-sub'><a href='#'>Online</a>
+		  <ul>
+			 <li class='has-sub'><a href='registration.html'>Registration</a></li>
+			 
+			 <li class='has-sub'><a href='student_application.html'>Application Details</a></li>
+		   
+			 
+		  </ul>
+		</li>
+		<li class='has-sub'><a href='#'>Courses</a>
+		  <ul>
+				   <li class='has-sub'><a href='courses2923.html?cat_id=18'>3 Months Course</a></li>
+				  <li class='has-sub'><a href='courses4c6e.html?cat_id=19'>6 Months Course</a></li>
+				  <li class='has-sub'><a href='coursesf9ef.html?cat_id=20'>1 Year Course</a></li>
+			   </ul>
+		</li>
+		
+		
+		
+		
+		<li><a href='notice.html'>Notice Board</a></li>
+		<li><a href='gallery.html'>Gallery</a></li>
+		
+		<li><a href='events.html'>Events</a></li>
+		<li class='has-sub'><a href='#'>Verification</a>
+		  <ul>
+			 <li class='has-sub'><a href='student_verification.html'>Registration Verification</a></li>
+			  <li class='has-sub'><a href='certificate_verification.html'>Certificate Verification</a></li>
+			 
+		  </ul>
+		</li>
+		<li><a href='contact.html'>Contact Us</a></li>
+		</ul>
+		</div>
+		</div>
+		</nav>
+</nav>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script><!-- banner -->
+  
+    <!-- //banner -->
+	<div class="courses_box1">
+	   <div class="container">
+	   	  <div class="col-md-3">
+			
+	      
+          <div class="social-widget">
+          	<!-- <h2>Connect with us</h2>
+          	  <ul class="courses_social">
+				<li class="facebook-icon">
+					<div>
+						<a href="#" class="fa fa-facebook"></a>
+						
+					</div>        							
+				</li>
+				<li class="twitter-icon">
+					<div>
+						<a href="#" class="fa fa-twitter"></a>
+						
+					</div>        							
+				</li>
+				<li class="gplus-icon">
+					<div>
+						<a href="#" class="fa fa-google-plus"></a>
+						
+					</div>        							
+				</li>
+				<div class="clearfix"> </div>
+			 </ul>-->
+           </div>
+         
+		</div>
+		<div class="col-md-12">
+			<div class="course_list">
+			    <div class="table-header clearfix">
+                	<div class="col-md-12"> Certification Verification </div>
+    			</div>
+				<div class="row" style="margin-top:20px;">
+				<form action="https://rspbharat.com/certificate_verification.php" method="post">
+                <div class="col-md-9">
+				<input type="text" name="certificate" placeholder="Enter Certificate No." style="width:100%; height:40px;">
+				</div>
+				
+				<div class="col-md-2">
+				 <input type="submit" value="Search" name="submit" style="width:150px; height:40px; background-color:#FF9900; color:#000000; border:none;padding:1%;">
+				</div>  
+				
+                </form>
+				</div>
+				
+			<div class="row" style="margin-top:20px;">
+								</div>
+				
+               </div>
+		    </div>
+		    <div class="clearfix"> </div>
+	   </div>
+	</div>
+   <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=177730772597903";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="footer">
+    <div class="container">
+        
+        <div class="col-md-3 grid_4">
+           <h3>Quick Links</h3>
+            <ul class="footer_list">
+                <li><a href="registration.html">-   STUDENT REGISTRATION</a></li>
+                <li><a href="notice.html">-  NOTICE BOARD</a></li>
+                <li><a href="gallery.html">-  IMAGE GALLERY</a></li>
+                <li><a href="contact.html">-  CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 grid_4">
+           <h3>Contact Us</h3>
+            <address>
+                <strong>Near dayavihar jr. collage, Benagaon, Kanas </strong>
+                <br>
+                <span>Dist-puri, <Pin-752017></Pin-752017></span>
+                <br><br>
+                <abbr>Email : </abbr> <a href="gurukul.coaching021@gmail.com">gurukul.coaching021@gmail.com</a><br/>
+                 <abbr>Mobile : </abbr> +91-9662895519
+                <br>
+                <div style="font-weight:bold;" class="schedule-block">
+                <b>Office Hour:</b><br/>
+                Monday - Saturday 07:00AM to 06:00PM <br/>
+                Sunday Closed
+                </div>
+                <br>
+                
+           </address>
+        </div>
+        <div class="col-md-3 grid_4">
+           <!-- <h3>Download Our App</h3> -->
+               <!-- <a href="https://play.google.com/store/apps/details?id=com.wbbce.remo" target="_blank"><img src="images/google-play.png" style="width:100%; height:auto;"/></a> -->
+             
+        </div>
+        <div class="clearfix"> </div>
+        <div class="copy">
+            <p>Copyright © 2021 GURUKUL. All Rights Reserved  | Powered by <a href="http://dishawebexperts.com/" target="_blank">GURUKUL INSTITUTE</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://w3layouts.com/" target="_blank" style="color:#005299;"></a> </p>
+        </div>
+    </div>
+</div>
+<!-- Statcounter code for Rspbharat.com http://rspbharat.com
+on Dreamweaver -->
+<script type="text/javascript">
+var sc_project=12401294; 
+var sc_invisible=1; 
+var sc_security="b32a4da7"; 
+</script>
+<script type="text/javascript"
+src="../www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12401294/0/b32a4da7/1/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->    <div style="margin-right:20px;" class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=919932741015" target="_blank">
+        <h5><i class="fa fa-whatsapp fa-3x fa-spin" aria-hidden="true"></i></h5></a>
+        </div>
+<!-- FlexSlider -->
+<link href="css/flexslider.css" rel='stylesheet' type='text/css' />
+  <script defer src="js/jquery.flexslider.js"></script>
+  <script type="text/javascript">
+	$(function(){
+	  SyntaxHighlighter.all();
+	});
+	$(window).load(function(){
+	  $('.flexslider').flexslider({
+		animation: "slide",
+		start: function(slider){
+		  $('body').removeClass('loading');
+		}
+	  });
+	});
+  </script>
+<!-- FlexSlider -->
+</body>
+
+<!-- Mirrored from rspbharat.com/certificate_verification.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jun 2022 13:48:34 GMT -->
+</html>	

@@ -1,0 +1,188 @@
+body{
+    background: url(http://www.timurtek.com/wp-content/uploads/2014/10/form-bg.jpg) no-repeat center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{color:#e2d81d;text-decoration: none;}
+a:hover{color:#aaa; }
+.pull-right{float: right;}
+.pull-left{float: left;}
+.clear-fix{clear:both;}
+div.logo{text-align: center; margin: 20px 20px 30px 20px; fill: #566375;
+    font-family: 'Carattere';font-size: 22px;
+     border-radius: 10px;
+     box-shadow:0 3px 0 rgba(233, 227, 110, 0.593);
+     background-color: #000;
+}
+div.logo svg{
+   width:180px;
+   height:100px;
+}
+.logo-active{fill: #eed81a !important;}
+#formWrapper{
+   background: rgba(0,0,0,.2); 
+   width:100%; 
+   height:100%; 
+   
+   transition:all .3s ease;
+   background-image: url("C:\Users\HP\Desktop\my new documents\bg_image.jpg");
+}
+.darken-bg{background: rgba(0,0,0,.5) !important; transition:all .3s ease;}
+
+div#form{
+   position: absolute;
+   height:630px;
+   background-color: #fff;
+   margin:auto;
+   border-radius: 5px;
+   padding:20px;
+   top: 202px;
+    left: 188px;
+    width: 1311px;
+   margin-left:-190px;
+   margin-top:-188px;
+    background-color: #000000a7;
+}
+td.form-item, .form-item2{position: relative; display: block; margin-bottom: 18px;}
+input{transition: all .2s ease;}
+input.form-style{
+   color: white;
+   display: block;
+   width: 320px;
+   height: 32px;
+   padding: 5px 5%;
+   border:2px solid #ccc;
+   -moz-border-radius: 27px;
+   -webkit-border-radius: 27px;
+   border-radius: 15px;
+   -moz-background-clip: padding;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   background-color: rgba(92, 85, 85, 0.319);
+   font-family:'HelveticaNeue','Arial', sans-serif;
+   font-size: 105%;
+   letter-spacing: .8px;
+   margin-bottom: 10px;
+    margin-left: -105px;
+    position: relative;
+    left: 269px;
+}
+td.form-item .form-style:focus{outline: none; border:2px solid #ead322; color:#e7ea22; }
+td.form-item p.formLabel {
+   position: absolute;
+   left:26px;
+   top:2px;
+   transition:all .4s ease;
+   color:rgb(222, 205, 18);}
+td.form-item2 .form-style:focus{outline: none; border:2px solid #ead322; color:#e7ea22; }
+td.form-item2 p.formLabel {
+   position: absolute;
+   left:26px;
+   top:2px;
+   transition:all .4s ease;
+   color:rgb(222, 205, 18);}
+.formTop{top:-22px !important; left:26px; background-color: #fff; padding:0 5px; font-size: 14px; color:#e9e215 !important;}
+.formStatus{color:#bbbcb6 !important;}
+input[type="button"].login{
+   float:right;
+   width: 112px;
+   height: 37px;
+   -moz-border-radius: 19px;
+   -webkit-border-radius: 19px;
+   border-radius: 19px;
+   -moz-background-clip: padding;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   background-color: #f1ce08b3;
+   border:2px solid #010f16;
+   border:none;
+   color: #000;
+   font-weight: bold;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.615);
+}
+input[type="button"].login:hover{background-color: rgba(105, 102, 102, 0.299); border:1px solid #e9e614; color:#dadd0f; cursor:pointer;
+   box-shadow:  0 3px 4px #9b8707;
+}
+input[type="button"].login:focus{outline: none;}
+.certificate{
+    font-weight: bold;
+    background-image: linear-gradient(to left, rgb(70 100 3), rgb(164 158 4), rgb(105 150 5), #9b8707, #ebc806);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    word-spacing: 18px;
+}
+#bg{
+    background-image: url(photo.jpg);
+    filter: blur(5px);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+select#option{
+   display: flex;
+
+}
+select#option-value{
+   color: rgb(119, 114, 114);
+   display: block;
+   width: 100%;
+   height: 56px;
+   padding: 5px 5%;
+   border: 2px solid #ccc;
+   -moz-border-radius: 27px;
+   -webkit-border-radius: 27px;
+   border-radius: 15px;
+   -moz-background-clip: padding;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   background-color: rgba(92, 85, 85, 0.319);
+   font-family: 'HelveticaNeue','Arial', sans-serif;
+   font-size: 105%;
+   letter-spacing: .8px;
+}
+div.form-item #option-value:focus{outline: none; border:2px solid #ead322; color:#e7ea22; }
+
+option {
+   background: #000000d1;
+}
+select option:checked,
+select option:hover {
+    box-shadow: 0 0 10px 100px #000 inset;
+    background-color: #bbb;
+}
+table{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.td{
+   color: white;
+   font-size: 105%;
+   text-align: left;
+    position: relative;
+    bottom: 15px;
+    left: 66px;
+}
+td.td2 {
+   top: -14px;
+   color: white;
+   font-size: 105%;
+   text-align: left;
+   position: relative;
+   left: 352px;
+}
+.form-item2{
+   position: relative;
+   left: 260px;
+    bottom: 10px;
+}
+.form-item3{
+   position: relative;
+    left: 667px;
+    bottom: 10px;
+}

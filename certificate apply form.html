@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Carattere' rel='stylesheet'>
+    <link rel="stylesheet" href="certificate_apply form.css">
+    
+    <title>Document</title>
+</head>
+<body style="background-image: url(photo2.jpg);">
+    
+<div id="formWrapper">
+
+    <div id="form">
+        <div class="logo">
+        <h1 class="certificate">Certificate Apply Form</h1>
+        </div>
+        <table>
+            <tr>
+                <td class="td">Applicant Name</td>
+                <td class="td">:</td>
+            <td class="form-item">
+                <input type="text" name="email" placeholder="Applicant Name"  class="form-style" autocomplete="off"/>
+            </td>
+            <td class="td2">Date Of Borth</td>
+        <td class="td2">:</td>
+            <td class="form-item2">
+                <input type="text" name="DOB" placeholder="DOB" id="DOB"  class="form-style" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'" autocomplete="off"/>
+            </td>
+            
+        </tr>
+        <tr>
+            <td class="td">Father's Name</td>
+            <td class="td">:</td>
+            <td class="form-item">
+                <input type="text" name="password" placeholder="Father's Name" id="password" class="form-style" />
+                <!-- <div class="pw-view"><i class="fa fa-eye"></i></div> -->
+            </td>
+            <td class="td2">Mother's Name</td>
+            <td class="td2">:</td>
+                <td class="form-item2">
+                    <input type="text" name="password" placeholder="Mother's Name" id="password" class="form-style" />
+                    <!-- <div class="pw-view"><i class="fa fa-eye"></i></div> -->
+                </td>
+        </tr>
+        
+        <tr>
+            <td class="td">Phone No.</td>
+            <td class="td">:</td>
+                <td class="form-item">
+                    <input type="tel" name="Phone" placeholder="Phone No."  class="form-style" autocomplete="off"/>
+                </td>
+                <td class="td2">E-mail Id</td>
+                <td class="td2">:</td>
+                    <td class="form-item2">
+                        <input type="email" name="email" placeholder="E-mail Id"  class="form-style" autocomplete="off"/>
+                    </td>
+        </tr>
+        <tr>
+        <td class="td">Adimission Date</td>
+        <td class="td">:</td>
+            <td class="form-item">
+                <input type="text" name="Admission Date" placeholder="Admission Date"  class="form-style" id="Admission Date" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'" autocomplete="off"/>
+            </td>
+            <td class="td2">Existing Date</td>
+        <td class="td2">:</td>
+            <td class="form-item2">
+                <input type="text" name="email"  placeholder="Existing Date" class="form-style" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'" autocomplete="off"/>
+            </td>
+        </tr>
+        <tr>
+        <td class="td">Courses</td>
+        <td class="td">:</td>
+            <td class="form-item">
+            <input list="browsers" name="browser" id="browser" placeholder="Courses" class="form-style" autocomplete="off"/>
+                <datalist id="browsers">
+                    <option value="PGDCA">
+                    <option value="DCA">
+                    <option value="CCA">
+                    <option value="TALLY">
+                    <option value="DTP">
+                    </datalist>
+                </td>
+                <td class="td2">Course Duration</td>
+        <td class="td2">:</td>
+            <td class="form-item2">
+                <input list="years" type="text" name="email" placeholder="Course Duration"  class="form-style" autocomplete="off"/>
+                <datalist id="years">
+                    <option value="1 Year">
+                    <option value="4 Months">
+                    <option value="3 Months">
+                    <option value="2 Months">
+                    </datalist>
+                </td>
+        </tr>
+        <tr>
+        <td class="td">Resistration No.</td>
+        <td class="td">:</td>
+            <td class="form-item">
+                <input type="text" name="email" placeholder="Resistration No" class="form-style" autocomplete="off"/>
+            </td>
+            <td class="form-item3">
+            <input type="button" class="login pull-right" value="Resister">
+        </td>
+        </tr>
+        
+    </table>
+    </div>
+</div>
+</body>
+</html>
