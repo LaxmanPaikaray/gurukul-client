@@ -9,6 +9,9 @@
 // );
 
 function getStudentDetails() {
+    var preloader = document.getElementById('loader');
+                    preloader.style.display = 'block';
+    
     $.ajax(
         {
             url: "https://gurukul123.herokuapp.com/api/students/getDetails",
@@ -18,6 +21,7 @@ function getStudentDetails() {
                 "registrationNo": $("#rollNo").val()
             }),
             success: function(result){
+                preloader.style.display = 'none'
                 setStudentDetailsView(result.data)
             }
         }
