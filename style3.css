@@ -2,8 +2,8 @@
 
 .site-wrap {
   max-width: 100%;
-  //margin: 150px auto;
- // padding: 1em 0.5em;
+  margin: 150px auto;
+ padding: 1em 0.5em;
 }
 
 .block-slider { line-height: 170px; }
@@ -23,7 +23,7 @@
 }
  @media (min-width: 500px) {
 
-.block-slider__item { width: 100%%; }
+.block-slider__item { width: 100%; }
 }
  @media (min-width: 700px) {
 
@@ -43,9 +43,9 @@
 }
 
 .block-slider__image {
- // padding: 0 0.5em;
+ padding: 0 0.5em;
   background:#999999;
   color: #fff;
   text-align: center;
- // border:1px solid #000;
+ border:1px solid #000;
 }
