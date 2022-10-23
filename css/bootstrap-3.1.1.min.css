@@ -61,10 +61,16 @@ abbr[title] {
     border-bottom: 1px dotted
 }
 
-b,
-strong {
-    font-weight: 100;
+b{
+    font-weight: bold;
     font-size: 15px;
+    position: relative;
+    left: 15px;
+}
+strong {
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
 }
 
 dfn {
@@ -911,9 +917,13 @@ pre code {
 
 .row {
     margin-left: -15px;
+    margin-right: -15px;
+    /* height: 150px; */
+}
+.row_2{
+    margin-left: -15px;
     margin-right: -15px
 }
-
 .col-xs-1,
 .col-sm-1,
 .col-md-1,
@@ -1439,7 +1449,7 @@ pre code {
     }
 
     .col-md-9 {
-        width: 75%
+        width: 75%;
     }
 
     .col-md-8 {
@@ -7098,7 +7108,7 @@ button.close {
     }
 }
 
-@media (min-width:992px) and (max-width:1199px) {
+@media (min-width:1000px) and (max-width:1199px) {
     .hidden-md {
         display: none !important
     }

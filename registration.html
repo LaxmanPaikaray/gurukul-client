@@ -23,7 +23,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" href="styles.css">
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <link href="css/general.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="css/jquery.countdown.css" />
+<link rel="stylesheet" href="css/jquery.countdown.css" />    
+<link rel="icon" type="image/x-icon" href="gurukrupa logo 4x4.png">
 
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
 <!----font-Awesome----->
@@ -280,7 +281,7 @@ $(".city").html(html);
 	   	 
 	   	  <div class="col-md-6 admission_left">
 	   	  
-	   	  	<form action="https://rspbharat.com/view_application.php"  method="post" enctype="multipart/form-data" name="registration">
+	   	  	<form action="Application_form.html	" method="post" enctype="multipart/form-data" name="registration">
 				<div class="input-group input-group1">
 					<label>Name Of Applicant<span style="color:#FF0000;">&nbsp;*</span></label>
 					 <input class="form-control has-dark-background" name="Applicant_Name" id="slider-name" placeholder="Enter Name" type="text" required="required">
@@ -314,8 +315,15 @@ $(".city").html(html);
 						 <option value="pumpernickel">WEB DESIGN</option>1 year
 					</select>
 				  </label>
-				
-
+				  <label for="dog-names">Subject
+					<select name="dog-names" id="dog-names">
+					   	<option value="rigatoni">Fondamental, MS Office 2013, Programing, Internet</option>
+					   	<option value="dave">Fondamental, MS Office</option>
+						<option value="pumpernickel">Accounts, Group, Ladger, Voucher, GST</option>
+						<option value="pumpernickel">Page maker, Corel draw, Photoshop</option>
+						<option value="pumpernickel">HTML, CSS, Bootstrap, JavaScript, Ajax, Json</option>	
+					</select>
+				  </label>
 			  <label for="dog-names">Course Duration
 				<select name="dog-names" id="dog-names">
 				   <option value="rigatoni">3 Months</option>
@@ -354,10 +362,10 @@ $(".city").html(html);
                 <input class="form-control has-dark-background" name="Pin" id="slider-name" placeholder="Pin." type="text" required="required">
              </div>
 			 </div>
-			 <div class="input-group input-group1">
+			 <!-- <div class="input-group input-group1">
 				<label>Phone (Applicant).<span style="color:#FF0000;">&nbsp;*</span></label>
 				   <input class="form-control has-dark-background" name="Phone_no" id="slider-name" placeholder="Phone no." type="text" required="required">
-				</div>
+				</div> -->
 			 
 			 
             <!-- select-block -->
@@ -365,6 +373,10 @@ $(".city").html(html);
                   <div class="clearfix"> </div>
 			</div>
             <div class="col-md-6 admission_right">
+				<div class="input-group input-group1">
+					<label>Phone (Applicant).<span style="color:#FF0000;">&nbsp;*</span></label>
+					   <input class="form-control has-dark-background" name="Phone_no" id="slider-name" placeholder="Phone no." type="text" required="required">
+					</div>
 
 			  <div class="input-group input-group1">
 			    <label>D.O.B<span style="color:#FF0000;">&nbsp;*</span></label>
@@ -372,7 +384,7 @@ $(".city").html(html);
              </div>
 			 
               <div class="col-md-4 form_box">
-                  <div class="select-block1">
+                  <div class="select-block2">
                     <select name="sday" required="required">
 	                    <option value="">Day</option>
 	                   						<option value="1">1</option>
@@ -410,7 +422,7 @@ $(".city").html(html);
                   </div>
                  </div>
                  <div class="col-md-4 form_box">
-                   <div class="select-block1">
+                   <div class="select-block2">
                     <select name="smonth" required="required">
 	                    <option value="">Month</option>
 	                     						 <option value="1">1</option>
@@ -429,7 +441,7 @@ $(".city").html(html);
                   </div>
                  </div>
                  <div class="col-md-4 form_box1">
-                   <div class="select-block1">
+                   <div class="select-block2">
                     <select name="syear" required="required">
 	                    <option value="">Year</option>
 	                    						<option value="2022">2022</option>
@@ -515,7 +527,7 @@ $(".city").html(html);
 				 </div>
 				 
 				  <div class="col-md-4 form_box">
-					  <div class="select-block1">
+					  <div class="select-block2">
 						<select name="sday" required="required">
 							<option value="">Class</option>
 												   <option value="1">10th</option>
@@ -529,7 +541,7 @@ $(".city").html(html);
 					  </div>
 					 </div>
 					 <div class="col-md-4 form_box">
-					   <div class="select-block1">
+					   <div class="select-block2">
 						<select name="smonth" required="required">
 							<option value="">Stream</option>
 													  <option value="1">10th</option>
@@ -540,7 +552,7 @@ $(".city").html(html);
 					  </div>
 					 </div>
 					 <div class="col-md-4 form_box1">
-					   <div class="select-block1">
+					   <div class="select-block2">
 						<select name="syear" required="required">
 							<option value="">Year Of Passing</option>
 													<option value="2022">2022</option>
@@ -768,7 +780,7 @@ $(".city").html(html);
              </div>
             
 			<div class="form-group col-md-12 form-group1">
-                <label class="col-md-3 control-lable" for="sex">Marital Status: </label>
+                <label class="col-md-3 control-lable" for="sex">Marital Status: <span style="color:#FF0000;">&nbsp;*</span></label>
                 <div class="col-md-9">
                     <div class="radios">
 				        <label for="radio-01" class="label_radio">
@@ -783,11 +795,11 @@ $(".city").html(html);
                 <div class="clearfix"> </div>
              </div>
 			
-               <!-- <div class="form-field">
+               <div class="form-field">
 			   <div class="col-md-7 photo"><label>Upload Photo (image:100x150) (jpg)<span style="color:#FF0000;">&nbsp;*</span> :&nbsp;&nbsp;&nbsp;</label></div>
 			   <div class="col-md-5"><input name="news_image" id="cphoto" type="file" required="required" accept="image/*"></div>
 			   <div class="clearfix"> </div>
-             </div> -->
+             </div>
 		     <!-- <div class="form-field">
 			   <div class="col-md-7 photo"><label>Upload ID Proof (Scanned Image 400x400) (jpg)<span style="color:#FF0000;">&nbsp;*</span> :&nbsp;&nbsp;&nbsp;</label></div>
 			   <div class="col-md-5"><input name="id_proof" id="cphoto2" type="file" required="required" accept="image/*"></div>
@@ -804,7 +816,7 @@ $(".city").html(html);
 			   <div class="col-md-5"><input name="qualf" id="cphoto" type="file" required="required"></div>
 			   <div class="clearfix"> </div>
              </div> -->
-	            <input type="submit" value="submit" class="course-submit" name="submit" onsubmit="return fileValidation()">		                            
+	            <input type="submit" value="submit" class="course-submit" name="submit">		                            
              </form>	
 	   	   </div>
 	   	  <div class="clearfix"> </div>
@@ -861,7 +873,7 @@ $(".city").html(html);
                  <abbr>Mobile : </abbr> +91-9662895519
                 <br>
                 <div style="font-weight:bold;" class="schedule-block">
-                <b>Office Hour:</b><br/>
+                <strong>Office Hour:</strong><br/>
                 Monday - Saturday 07:00AM to 07:00PM <br/>
                 Sunday Closed
                 </div>

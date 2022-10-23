@@ -79,7 +79,6 @@ p::selection {
 p::-moz-selection {
     background: #ffb7b7;
 }
-}
 
 h1 {
     font-size: 44px;
@@ -1834,11 +1833,12 @@ ul.contact_list li span.mail:before {
 
 .page_heading {
     font-size: 28px;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 30px;
+    font-family: serif;
     margin: 0px 0px 15px;
     text-align: left;
-    color: #6e6e6e;
+    color: #097285;
     transition: color 0.2s ease-in 0s;
 }
 
@@ -2112,7 +2112,6 @@ row-eq-height > [class*="col-"] {
 .form_grid {
     clear: both;
     height: auto;
-    margin: 0px;
     padding: 0px;
     width: 100%;
 }
@@ -2121,7 +2120,7 @@ row-eq-height > [class*="col-"] {
     height: auto;
     margin: 4px 0px;
     padding: 0px;
-    width: 120px;
+    width: 170px;
 }
 
 .contactform_input {
@@ -2142,8 +2141,8 @@ row-eq-height > [class*="col-"] {
 
 .lable_text {
     color: #494949;
-    font-size: 13px;
-    font-weight: normal;
+    font-size: 15px;
+    /* font-weight: bold; */
     margin: 0px;
     padding: 7px 2px;
     text-align: left;
@@ -2873,7 +2872,12 @@ row-eq-height > [class*="col-"] {
 
 /*For PDF*/
 
-.avatar{  overflow:hidden;   }
+.avatar{  
+        overflow: hidden;
+}
+@media screen {
+    
+}
 
 .user-icon{
   font-size:2em;  /* change font size should change size of icon */
@@ -2940,17 +2944,23 @@ row-eq-height > [class*="col-"] {
   border-radius:2em 2em 0 0;
 } */
 .form_grid{
-    background-color: #cfd6c7;
+    background-color: #9fe2d9;
     box-shadow: #666;
-    border-style: double;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   table-layout: auto;
+    border: 3px solid #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    table-layout: auto;
 }
 .contact_innerblock{
-    background-color: #a17747;
+    background-color: #0b6f59;
+    background-image: linear-gradient(175deg, black, transparent);
     height: 100%;
 }
 #s-detail-cont {
     display: none;
 }
-
+tr:nth-child(even){
+    background-color: rgb(255, 255, 255);
+}
+th:nth-child(even), td:nth-child(odd){
+    background-color: rgb(255, 255, 255);
+}
