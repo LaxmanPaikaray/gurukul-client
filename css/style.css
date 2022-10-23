@@ -1133,15 +1133,18 @@ p.description{
     padding: 0em 0 0 0;
 }
 .table-header {
-    background-color:#613b03;
+    background-color: #086850;
+    background-image: linear-gradient(182deg, black, transparent);
 }
 .course_list .table-header > div {
-    float:left;
+    float: left;
     padding: 15px 20px;
-    color: #fff;
+    color: #50c9dd;
     font-size: 20px;
     line-height: 1;
     align-self: flex-end;
+    font-weight: bold;
+    font-family: emoji;
     	
 }
 .table-header > div.id_col {

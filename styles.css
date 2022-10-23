@@ -323,3 +323,18 @@
 .course_list {
   margin-top: 20px;
 }
+.Login_Admin {
+  color: black;
+  background-color: #24e0effc;
+  border: 2px solid #24e0effc;
+  width: 120px;
+  text-align: center;
+  height: 32px;
+  float: left;
+  border-radius: 5px;
+  position: absolute;
+  right: 238px;
+  top: 14px;
+  font-size: large;
+  font-family: revert;
+}
