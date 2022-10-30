@@ -29,6 +29,8 @@ body{
     width: 21cm;
     height: 29.7cm;
     padding: 1cm;
+    margin-left: 25%;
+    margin-right: 20%;
 }
 .photo{
     bottom: 60px;

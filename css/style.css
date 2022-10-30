@@ -3600,3 +3600,25 @@ h5.shortcode {
     
         }
     }
+    .student_details_table{
+        border: 2px solid black;
+        align-items: center;
+        margin: 15px;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        height: vh;
+    }
+    th,td{
+        border: 2px solid black;
+        text-align: center;
+        padding: 5px;
+        width: 114px;
+    }
+    .buttondetails{
+        border: 2px solid black;
+        text-align: center;
+        padding: 5px;
+        margin-left: 20px;
+        width: 100px;
+    }
