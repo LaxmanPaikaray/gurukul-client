@@ -1,9 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: lato, sans-serif;
-    color: #4a4a4a;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #0e0101;
     display: flex;
+
     /* justify-content: center;
     align-items: center; */
     /* min-height: 100vh; */
@@ -103,7 +104,7 @@ p {
     position: relative;
     bottom: 285px;
     left: 489px;
-    background-color: #c0ab70;
+    background-color: #f1f0ed;
     color: black;
 }
 .heading{

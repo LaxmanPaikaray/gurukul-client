@@ -17,14 +17,17 @@
     <!-- <div class="img">
         <img src="D:\Gurukrupa Research and Training Centre\gurukuledu.in\WhatsApp Image 2022-10-03 at 2.05.01 PM.jpeg" alt="">
     </div> -->
+    <div id="loader" class="rotate" style="display: none;"></div>
     
     <div class="page">
        
         <form action="">
             <div id="bg"></div>
             <h4>Learn...Belive... Archive !!!</h4>
-            <h3>GURUKUL RESEARCH AND TRAINNING CENTRE (P) LTD.</h3>
-            <div class="photo">Paste here your recent passport size colour photograph</div>
+            <h3>GURUKRUPA RESEARCH AND TRAINNING CENTRE</h3>
+            <div class="photo" id="photo">
+                Paste here your recent passport size colour photograph
+            </div>
             <p class="regd">Regd. Under Govt. of India - U80900OR2022PTC040690</p>
             <p>NEAR DAYAVIHAR COLLEGE, BENAGAON, KANAS, PURI - 752017</p>
             <div><img src="gurukrupa logo 4x4.png" alt="">
@@ -33,82 +36,69 @@
                     <br>
                     <i>(Please fill the fields in block letters only)</i>
                 </h3>
-            </div>
+                </div>
             <table>
                 <tr>
                 <th>
                     Name of Applicant
                 </th>
                 <td style=" left: 2px;">:</td>
-                <td><input type="text" name="Name" id="" ></td>
+                <td><input type="text" name="Name" id="name" ></td>
             </tr>
             <tr>
                 <th>
                     Father's/Husband's Name
                 </th>
                 <td style=" left: 2px;">:</td>
-                <td><input type="text" name="Name" id="" ></td>
+                <td><input type="text" name="Name" id="fatherName" ></td>
             </tr>
             <tr>
                 <th>
                     Mother's Name
                 </th>
                 <td style=" left: 2px;">:</td>
-                <td><input type="text" name="Name" id="" ></td>
+                <td><input type="text" name="Name" id="motherName" ></td>
             </tr>
             <tr>
                 <th>
                     Course Desired For Admission
                 </th>
                 <td style=" left: 2px;">:</td>
-                <td><input type="text" name="Course" id="" ></td>
-            </tr>
-            <tr>
-                <th>
-                    Subject
-                </th>
-                <td style=" left: 2px;">:</td>
-                <td><input type="text" name="Subject" id="" ></td>
+                <td><input type="text" name="Course" id="course" ></td>
             </tr>
             <tr>
                 <th>
                     Course Duration
                 </th>
                 <td style=" left: 2px;">:</td>
-                <td><input type="text" name="Subject" id="" ></td>
+                <td><input type="text" name="Subject" id="courseDuration" ></td>
             </tr>
-            <tr>
-                <th>
-                    Address For Correspondance
-                </th>
-                <td style=" left: 2px;">:</td>
-                <td><input type="text" name="Address" id=""></td>
-            </tr>
+           
         </table>
         <table>
             <tr>
                 <td>At.</td>
                 <td>:</td>
-                <td><input type="text" name="Address" id="" class="table_data"></td>
+                <td><input type="text" name="Address" id="addressAt" class="table_data"></td>
                 <td>P.O.</td>
                 <td style=" left: 2px;">:</td>
-                <td><input type="text" name="Address" id="" class="table_data"></td>
+                <td><input type="text" name="Address" id="addressPo" class="table_data"></td>
             </tr>
             <tr>
                 <td>Ps.</td>
                 <td>:</td>
-                <td><input type="text" name="Address" id="" class="table_data"></td>
+                <td><input type="text" name="Address" id="addressPs" class="table_data"></td>
                 <td>Dist.</td>
                 <td style=" left: 2px;">:</td>
-                <td><input type="text" name="Address" id="" class="table_data"></td>
+                <td><input type="text" name="Address" id="addressDist" class="table_data"></td>
             </tr>
             <tr>
                 <td>Pin.</td>
                 <td>:</td>
-                <td><input type="text" name="Address" id="" class="table_data"></td>
+                <td><input type="text" name="Address" id="addressPin" class="table_data"></td>
                 <td>Ph.(Applicant)</td>
                 <td style=" left: 2px;">:</td>
-                <td><input type="text" name="Phone_no" id="" class="table_data"></td>
+                <td><input type="text" name="Phone_no" id="phoneApplicant" class="table_data"></td>
             </tr>
         </table>
         <table>
@@ -128,42 +118,42 @@
         </tr>
         <table class="education">
             <tr>
-                <th style="text-align: center;">Examination passed</th>
-                <th style="text-align: center;">Stream</th>
-                <th style="text-align: center;">Year Of Passing</th>
+                <th style="text-align: center;" name="Examination" id="">Examination passed</th>
+                <th style="text-align: center;" id="">Stream</th>
+                <th style="text-align: center;" id="">Year Of Passing</th>
             </tr>
             <tr>
-               <td style="text-align: center;"><input type="text" name="passed" id="" class="group_3"></td>
-               <td style="text-align: center;"><input type="text" name="Subject" id="" class="group_3"></td>
-               <td style="text-align: center;"><input type="text" name="year" id="" class="group_3"></td>
+               <td style="text-align: center;"><input type="text" name="passed" id="examPass" class="group_3"></td>
+               <td style="text-align: center;"><input type="text" name="Subject" id="examStream" class="group_3"></td>
+               <td style="text-align: center;"><input type="text" name="year" id="examYear" class="group_3"></td>
             </tr>
         </table>
         <table>
         <tr>
             <th>Gender</th>
             <td style=" left: 2px;">:</td>
-            <td><input type="text" name="Gender" id=""></td>
+            <td><input type="text" name="Gender" id="userGender"></td>
         </tr>
         <tr>
             <th>
                 Caste
             </th>
             <td style=" left: 2px;">:</td>
-            <td><input type="text" name="Caste" id=""></td>
+            <td><input type="text" name="Caste" id="userCaste"></td>
         </tr>
         <tr>
             <th>
                 Religion
             </th>
             <td style=" left: 2px;">:</td>
-            <td><input type="text" name="Religion" id=""></td>
+            <td><input type="text" name="Religion" id="userReligion"></td>
         </tr>
         <tr>
             <th>
                 Marital Status
             </th>
             <td style=" left: 2px;">:</td>
-            <td><input type="text" name="Marital Status" id=""></td>
+            <td><input type="text" name="Marital Status" id="UserStats"></td>
         </tr>
     </table>
     <p><u class="head">DECLARATION BY CANDIDATE</u></p>
@@ -180,5 +170,14 @@
         </form>
   
     </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/server-data.js"></script>
+    <script>
+        $(document).ready(() => {
+            const params = new URL(window.location.href).searchParams;
+            let id = params.get('id');
+            getOneStudentApplicationData(id)
+        })
+    </script>
 </body>
 </html>
